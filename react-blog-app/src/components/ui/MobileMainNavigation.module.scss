@@ -1,0 +1,77 @@
+@import '../../index.scss';
+
+$phone: 375px;
+$tablet: 679px;
+$bg-color: #000;
+$font-color: #777;
+
+.main_nav_mobile {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .btn {
+        margin: 0;
+        height: 50px;
+        width: 50px;
+        background: $bg-color;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2.5px;
+        position: relative;
+        border: none;
+
+        &:hover {
+            .bar {
+                background: $hover-color;
+            }
+        }
+    }
+
+    .bar {
+        display: block;
+        width: 75%;
+        height: 4px;
+        background: $font-color;
+        margin-bottom: 8px;
+
+        &:first-child {
+            margin-top: 8px;
+        }
+    }
+
+    .drawer {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: $bg-color;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $font-color;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
+
+    @media screen and (min-width:$phone) {
+        display: none;
+    }
+}

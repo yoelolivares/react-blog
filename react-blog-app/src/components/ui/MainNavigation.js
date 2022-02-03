@@ -1,15 +1,18 @@
-import { Link } from 'react-router-dom';
+
 import classes from './MainNavigation.module.scss';
+import MobileMainNav from './MobileMainNavigation';
+import NavLinkList from './NavLinkList';
 
 function MainNavigation() {
     return (
         <div className={classes.mainNav}>
             <nav>
-                <ul>
-                    <Link to='/'>Home</Link>
-                    <Link to='/about-us'>About us</Link>
-                </ul>
+                <NavLinkList />
             </nav>
+            <MobileMainNav />
+            <div>
+                
+            </div>
         </div>
     )
 }

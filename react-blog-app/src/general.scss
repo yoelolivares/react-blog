@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+.button {
+    background-color: $btn-bg;
+    border: none;
+    padding: 8px 24px;
+    color: $text--dark;
+    font-weight: bold;
+    border-radius: $border-radius-4;
+    margin: 4px 0;
+
+    &:hover {
+        background: $btn-bg--dark;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $text--dark;
+    margin: 4px 0;
+    position: relative;
+    
+
+    &:hover {
+        .link-bar {
+            width: 50%;
+        }
+    }
+}
+
+.link-bar {
+    height: 3px;
+    background: $text--dark;
+    width: 0;
+    display: block;
+    transition: width .2s ease-in-out ;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    z-index: 6;
+}

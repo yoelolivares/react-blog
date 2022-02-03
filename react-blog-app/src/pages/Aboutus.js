@@ -1,9 +1,9 @@
-import MainNavigation from "../components/ui/MainNavigation";
+import NavBar from "../components/ui/navigation/NavBar";
 
 function AboutUs() {
     return (
         <div>
-            <MainNavigation />
+            <NavBar />
             <h1>About us page</h1>
         </div>
     )

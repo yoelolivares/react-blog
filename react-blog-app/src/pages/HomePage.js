@@ -1,9 +1,10 @@
-import MainNavigation from "../components/ui/MainNavigation";
+import NavBar from "../components/ui/navigation/NavBar";
+import '../general.scss';
 
 function Homepage() {
     return (
         <div>
-            <MainNavigation />
+            <NavBar />
             <h1>Home page</h1>
         </div>
     )

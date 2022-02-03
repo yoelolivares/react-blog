@@ -1,0 +1,12 @@
+@import '../../../general.scss';
+
+.nav-bar {
+    width: 100%;
+    background-color: $body-bg--dark;
+    color: $text--dark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    position: relative;
+}

@@ -1,0 +1,126 @@
+@import '../../../general.scss';
+
+.main-nav-mobile {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+
+    &__btn {
+        margin: 0;
+        height: 36px;
+        width: 36px;
+        background: $body-bg--dark;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+
+            &__bar {
+                background: $text--dark;
+            }
+        }
+
+        &.active {
+            .main-nav-mobile__bar {
+                position: absolute;
+            }
+
+            .main-nav-mobile__bar:nth-child(1) {
+                margin: 0;
+                transform: rotate(45deg);
+                transition: transform 200ms ease-in-out;
+            }
+
+            .main-nav-mobile__bar:nth-child(2) {
+                margin: 0;
+                opacity: 0;
+                display: hidden;
+            }
+
+            .main-nav-mobile__bar:nth-child(3) {
+                top: 0;
+                margin: 0;
+                transform:rotate(-45deg);
+                transition: transform 200ms ease-in-out;
+            }
+        }
+    }
+
+    &__bar-container {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__bar {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: $text--dark;
+        margin-bottom: 6px;
+        opacity: 1;
+
+        &:first-child {
+            margin-top: 6px;
+        }
+
+        
+    }
+
+    &__drawer {
+        position: absolute;
+        top: 100%;
+        right: 12px;
+        width: 250px;
+        background: $body-bg--dark;
+        border: $borders--dark;
+        border-radius: $border-radius-8;
+        box-shadow: $shadow;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+    }
+
+    li {
+        margin: 4px 8px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .fadeIn {
+        visibility: visible;
+        transform: translateY(-5px);
+        opacity: 1;
+        transition: transform 250ms ease-in, visibility 350ms, opacity .2s linear;
+       
+    }
+
+    .fadeOut {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(5px);
+        transition: visibility 250ms ease-out, transform 350ms, opacity .2s linear;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}

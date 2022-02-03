@@ -1,0 +1,35 @@
+$body-bg: #fff;
+$body-bg--dark: #272935;
+
+//text
+$text: #161f38;
+$text--dark: #f9f9fa;
+
+//borders
+
+$borders: 1px solid #454854;
+$borders--dark: 1px solid #efefef;
+
+$border-radius-2: 2px;
+$border-radius-4: 4px;
+$border-radius-6: 6px;
+$border-radius-8: 8px;
+
+//shadow 
+
+$shadow: 0 10px 10px rgba(0, 0, 0, .2);
+
+
+//transition 
+
+$slide-up: translate3d(0,10px,0);
+
+
+//buttons 
+
+$btn-bg: #0057ff;
+$btn-bg--dark: #012293;
+
+//breakpoints
+$phone: 390px;
+$tablet: 820px;

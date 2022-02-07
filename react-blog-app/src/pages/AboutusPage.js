@@ -1,6 +1,6 @@
 import NavBar from "../components/ui/navigation/NavBar";
 
-function AboutUs() {
+function AboutusPage() {
     return (
         <div>
             <NavBar />
@@ -9,4 +9,4 @@ function AboutUs() {
     )
 }
 
-export default AboutUs;
+export default AboutusPage;

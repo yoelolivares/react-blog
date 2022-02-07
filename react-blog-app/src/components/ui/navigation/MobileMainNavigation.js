@@ -2,6 +2,7 @@ import './MobileMainNavigation.scss'
 import NavLinkList from './NavLinkList'
 
 import { useState } from 'react';
+import LoginButton from '../login/LoginButton';
 
 function MobileMainNav() {
     const [isActive, setActive] = useState('false');
@@ -31,6 +32,7 @@ function MobileMainNav() {
             </button>
             <div className={drawerClass}>
                 <NavLinkList />
+                <LoginButton />
             </div>
 
         </div>

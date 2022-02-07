@@ -1,5 +1,14 @@
 @import './variables.scss';
 
+//columns
+
+.default-column {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+//buttons
 .button {
     background-color: $btn-bg;
     border: none;
@@ -14,6 +23,7 @@
     }
 }
 
+//links
 a {
     text-decoration: none;
     color: $text--dark;

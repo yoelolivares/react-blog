@@ -1,0 +1,60 @@
+@import '../../../general.scss';
+
+.card {
+    width: 100%;
+    max-width: 750px;
+    border: $borders;
+    border-radius: $border-radius-8;
+    overflow: hidden;
+    margin-bottom: 32px;
+
+    &__card-link {
+
+        &:hover {
+            h3 {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__image-container {
+        overflow: hidden;
+        max-height: 450px;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__content {
+        padding: 20px;
+    }
+
+    &__description {
+        color: $text;
+        padding: 10px;
+        margin: 0;
+    }
+
+    &__buttons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    &__comment-link {
+        color: $btn-bg;
+
+        &:hover {
+            text-decoration: underline;
+            color: $btn-bg--dark;
+        }
+    }
+}
+
+.card + .card {
+    margin-bottom: 32px;
+}

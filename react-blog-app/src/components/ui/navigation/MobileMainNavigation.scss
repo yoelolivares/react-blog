@@ -80,9 +80,10 @@
 
     &__drawer {
         position: absolute;
+        z-index: 50;
         top: 100%;
         right: 12px;
-        width: 250px;
+        padding: 8px;
         background: $body-bg--dark;
         border: $borders--dark;
         border-radius: $border-radius-8;

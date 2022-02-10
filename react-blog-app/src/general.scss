@@ -9,21 +9,6 @@
     margin: 0 auto;
 }
 
-//buttons
-.button {
-    background-color: $btn-bg;
-    border: none;
-    padding: 8px 24px;
-    color: $text--dark;
-    font-weight: bold;
-    border-radius: $border-radius-4;
-    margin: 4px 0;
-
-    &:hover {
-        background: $btn-bg--dark;
-    }
-}
-
 //links
 a {
     text-decoration: none;

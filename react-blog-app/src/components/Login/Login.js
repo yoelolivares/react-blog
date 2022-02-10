@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Login.scss';
 import PropTypes from 'prop-types';
+import Button from '../ui/constant/Button';
 
 async function loginUser(credentials) {
     return fetch('http://localhost:8080/login', {
@@ -37,7 +38,7 @@ export default function Login({ setToken }) {
                     <input id="user-password" type="password" onChange={e => setPassword(e.target.value)}/>
                 </div>
                 <div className="input-grp login__btn-wrapper">
-                    <button className="button" type="submit" >Submit</button>
+                    <Button type={'submit'} text={'Submit'} iconName="FaBeer" />
                 </div>
             </form>
         </div>

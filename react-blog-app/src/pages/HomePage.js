@@ -1,6 +1,5 @@
 
 import NavBar from "../components/ui/navigation/NavBar";
-import '../general.scss';
 import Card from '../components/ui/card/Card';
 
 function Homepage() {

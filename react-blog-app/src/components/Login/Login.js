@@ -38,7 +38,7 @@ export default function Login({ setToken }) {
                     <input id="user-password" type="password" onChange={e => setPassword(e.target.value)}/>
                 </div>
                 <div className="input-grp login__btn-wrapper">
-                    <Button type={'submit'} text={'Submit'} iconName="FaBeer" />
+                    <Button type={'submit'} text={'Submit'} iconName="BsChat" />
                 </div>
             </form>
         </div>

@@ -1,14 +1,13 @@
 import './Icons.scss';
-import { FaBeer } from 'react-icons/fa';
+import React from 'react';
+import * as BsIcons from "react-icons/bs";
 
-export default function Icon(props) {
-    let icon;
+const IconObj = {
+    createIcon: (name, props, children) => {
+        const el = React.createElement(BsIcons[name], props = false, children = null)
 
-    switch (props.icon) {
-        case 'FaBeer':
-            icon = <FaBeer />;
-            break;
+        return <i className="icon">{el}</i>;
     }
+};
 
-    return <i className="icon">{icon}</i>;
-}
+export default IconObj;

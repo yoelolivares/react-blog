@@ -1,0 +1,18 @@
+@import '../../../variables.scss';
+
+.reg-form {
+    width: 400px;
+    margin: 0 auto;
+    &__input-grp {
+        margin-bottom: 8px;
+    }
+
+    &__input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
+}

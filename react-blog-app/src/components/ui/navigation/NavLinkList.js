@@ -7,7 +7,7 @@ function NavLinkList () {
         <li><Link to='/dashboard'>test 1<span className='link-bar'></span></Link></li>
         <li><Link to='/about-us'>test 2<span className='link-bar'></span></Link></li>
         <li><Link to='/about-us'>test 3<span className='link-bar'></span></Link></li>
-        <li><Link to='/about-us'>test 4<span className='link-bar'></span></Link></li>
+        <li><Link to='/profile'>profile<span className='link-bar'></span></Link></li>
     </ul>
 }
 

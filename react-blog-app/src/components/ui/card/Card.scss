@@ -9,11 +9,13 @@
     margin-bottom: 32px;
 
     &__card-link {
+        color: $text;
+        font-weight: bold;
+        font-size: 20px;
 
         &:hover {
-            h3 {
-                text-decoration: underline;
-            }
+            text-decoration: underline;
+            
         }
     }
 
@@ -35,6 +37,16 @@
         color: $text;
         padding: 10px;
         margin: 0;
+        
+        &-grp {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__date {
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 16px;
     }
 
     &__buttons-container {

@@ -1,4 +1,4 @@
-@import '../../../general.scss';
+@import '../../../variables.scss';
 
 .main-nav-mobile {
     margin: 0 auto;
@@ -100,6 +100,31 @@
 
     li {
         margin: 4px 8px;
+    }
+    a {
+        text-decoration: none;
+        color: $text--dark;
+        margin: 4px 0;
+        position: relative;
+        
+    
+        &:hover {
+            .link-bar {
+                width: 50%;
+            }
+        }
+    }
+    
+    .link-bar {
+        height: 3px;
+        background: $text--dark;
+        width: 0;
+        display: block;
+        transition: width .2s ease-in-out ;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        z-index: 6;
     }
 
     .hidden {
